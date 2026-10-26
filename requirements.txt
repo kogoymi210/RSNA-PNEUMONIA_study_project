@@ -1,0 +1,9 @@
+torch>=2.2
+timm>=1.0
+ultralytics>=8.4
+pydicom>=3.0
+pylibjpeg
+pylibjpeg-libjpeg
+opencv-python
+numpy
+ensemble-boxes
