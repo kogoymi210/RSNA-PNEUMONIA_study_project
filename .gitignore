@@ -3,5 +3,6 @@
 *.zip
 *.npy
 *.csv
+*.pt
 *_pred.png
 __pycache__/
