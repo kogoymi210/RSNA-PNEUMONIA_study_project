@@ -9,12 +9,12 @@ from ensemble_boxes import weighted_boxes_fusion
 
 # ---------------- константы (ансамбль, лучший результат на Kaggle) ----------------
 CLASSIFIERS = [  # (имя timm, размер, веса)
-    ("convnextv2_tiny.fcmae_ft_in22k_in1k", 512, "models/v1/classifier_best_for_f1_classifier_ConvNeXt_V2_Tiny_no_aug.pt"),
-    ("convnextv2_base.fcmae_ft_in22k_in1k_384", 640, "models/v2/classifier_best_for_f1_ConvNeXt_V2_Base_with_aug.pt"),
+    ("convnextv2_tiny.fcmae_ft_in22k_in1k", 512, "models/v1/v1_classifier_best_for_f1.pt"),
+    ("convnextv2_base.fcmae_ft_in22k_in1k_384", 640, "models/v2/v2_classifier_best_for_f1.pt"),
 ]
 YOLOS = [  # (размер, веса)
-    (512, "models/v1/yolo_best.pt"),
-    (640, "models/v2/yolo_best.pt"),
+    (512, "models/v1/v1_yolo_best.pt"),
+    (640, "models/v2/v2_yolo_best.pt"),
 ]
 CLS_THRESHOLD = 0.45     # YOLO-боксы остаются, если средняя P(пневмония) >= порога
 YOLO_CONF = 0.10         # минимальная уверенность бокса после объединения
